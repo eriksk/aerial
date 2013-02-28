@@ -6,6 +6,13 @@ module Airial
       @game = Game.new self
     end
 
+    def button_down id
+      case id
+      when Gosu::KbEscape
+        self.close
+      end
+    end
+
     def update
       dt = 16.0
       @game.update dt
