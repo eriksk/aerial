@@ -1,4 +1,4 @@
-module Airial
+module Aerial
   class GameWindow < Gosu::Window
     def initialize
       super WIDTH, HEIGHT, FULLSCREEN

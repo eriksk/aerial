@@ -1,9 +1,9 @@
-module Airial
+module Aerial
   class Game
     def initialize window
       @window = window
       @entities = []
-      @entities << Entity.new(Airial.load_image window, 'plane')
+      @entities << Entity.new(Aerial.load_image window, 'plane')
         .set_position(CENTER.x, CENTER.y)
         .add_behavior(PlaneControlBehavior.new(window))
       @particle_manager = ParticleManager.new window

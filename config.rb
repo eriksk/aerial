@@ -7,12 +7,12 @@ def require_dir dir
   end
 end
 
-module Airial
+module Aerial
   WIDTH = 1280
   HEIGHT = 720
   FULLSCREEN = false
   CONTENT_ROOT = "content"
-  TITLE = "Airial"
+  TITLE = "Aerial"
   CENTER = Vec2.new WIDTH / 2.0, HEIGHT / 2.0
 end
 

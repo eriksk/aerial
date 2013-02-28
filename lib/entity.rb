@@ -1,4 +1,4 @@
-module Airial
+module Aerial
   class Entity
     attr_accessor :image, :position, :velocity, :origin, :rotation, :scale, :color
 

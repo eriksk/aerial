@@ -1,4 +1,4 @@
-module Airial
+module Aerial
   class PlaneControlBehavior
     def initialize window
       @window = window
