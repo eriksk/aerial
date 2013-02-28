@@ -1,6 +1,12 @@
 require './lib/vec2'
 require './lib/helpers'
 
+def require_dir dir
+  Dir.glob("#{dir}/*") do |f|
+    require_relative f
+  end
+end
+
 module Airial
   WIDTH = 1280
   HEIGHT = 720
@@ -12,3 +18,5 @@ end
 
 require './lib/entity'
 require './lib/game'
+
+require_dir "./lib/behaviors"
