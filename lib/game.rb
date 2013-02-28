@@ -7,7 +7,6 @@ module Aerial
         .set_position(CENTER.x, CENTER.y)
         .add_behavior(PlaneControlBehavior.new(window))
       @particle_manager = ParticleManager.new window
-
     end
 
     def update dt
