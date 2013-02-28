@@ -17,9 +17,10 @@ module Aerial
 end
 
 require './lib/entity'
+require './lib/particle_emitter'
+require './lib/scrolling_background'
 require './lib/game'
 require './lib/particle_manager'
 require './lib/particle'
-require './lib/particle_emitter'
 
 require_dir "./lib/behaviors"

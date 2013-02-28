@@ -1,6 +1,6 @@
 module Aerial
   class ParticleManager
-    attr_accessor :particles
+    attr_accessor :particles, :emitters
 
     def initialize window
       @window = window

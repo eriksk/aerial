@@ -13,5 +13,9 @@ module Aerial
       @duration = 0.0
       @source = 0
     end
+
+    def reset
+      @current = 0.0
+    end
   end
 end
