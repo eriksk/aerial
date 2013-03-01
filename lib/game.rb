@@ -3,6 +3,7 @@ module Aerial
     def initialize window
       @window = window
       @entities = []
+      
       @entities << Entity.new(Aerial.load_image window, 'plane')
         .set_position(CENTER.x, CENTER.y)
         .add_behavior(PlaneControlBehavior.new(window))
@@ -10,6 +11,12 @@ module Aerial
       @scrolling_background = ScrollingBackground.new window
       @particle_manager = ParticleManager.new window
       @particle_manager.emitters << ParticleEmitter.new(@entities.first.position, Vec2.new(-16, 0), 50, 4, [1, 2])
+
+      5.times do |i|
+        @entities << Entity.new(Aerial.load_tiles(window, 'chopper', 32, 16).first)
+          .set_position(rand() * WIDTH, rand() * HEIGHT)
+          .add_behavior(ChopperMovementBehavior.new)
+      end
     end
 
     def update dt
